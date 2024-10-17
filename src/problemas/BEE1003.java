@@ -2,18 +2,18 @@ package problemas;
 
 import java.util.Scanner;
 
-// - Extremamente Básico
-public class BEE1001 {
+// - Soma Simples
+public class BEE1003 {
     public static void main(String[] args) {
-        int a, b, x;
         Scanner entrada = new Scanner(System.in);
+        int a, b, soma;
 
         a = entrada.nextInt();
         b = entrada.nextInt();
 
-        x = a + b;
+        soma = a + b;
 
-        System.out.println("X = " + x);
+        System.out.println("SOMA = " + soma);
 
         entrada.close();
     }
