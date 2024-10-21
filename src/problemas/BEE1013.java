@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class BEE1013 {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        int a, b, c, maiorAB, maiorAC, maiorBC;
+        int a, b, c, maiorAB, maiorAC;
 
         a = entrada.nextInt();
         b = entrada.nextInt();
