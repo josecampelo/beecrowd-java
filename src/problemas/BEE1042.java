@@ -6,47 +6,47 @@ import java.util.Scanner;
 public class BEE1042 {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        int a, b, c, grande, medio, pequeno;
+        int a, b, c, maior, medio, menor;
 
         a = entrada.nextInt();
         b = entrada.nextInt();
         c = entrada.nextInt();
 
         if(a >= b && a >= c){
+            maior = a;
+
             if(b >= c){
-                grande = a;
                 medio = b;
-                pequeno = c;
+                menor = c;
             }else{
-                grande = a;
                 medio = c;
-                pequeno = b;
+                menor = b;
             }
         }else if(b >= a && b >= c){
+            maior = b;
+
             if(a >= c){
-                grande = b;
                 medio = a;
-                pequeno = c;
+                menor = c;
             }else{
-                grande = b;
                 medio = c;
-                pequeno = a;
+                menor = a;
             }
         }else{
-            grande = c;
+            maior = c;
 
             if(a >= b){
                 medio = a;
-                pequeno = b;
+                menor = b;
             }else{
                 medio = b;
-                pequeno = a;
+                menor = a;
             }
         }
 
-        System.out.println(pequeno);
+        System.out.println(menor);
         System.out.println(medio);
-        System.out.println(grande);
+        System.out.println(maior);
         System.out.println();
         System.out.println(a);
         System.out.println(b);
